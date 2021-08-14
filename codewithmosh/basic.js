@@ -88,18 +88,53 @@
 //     }
 //     return count
 // }
-let movie ={
-    title:'Another Movie',
-    releaseDate:'never',
-    rating:'unknown',
-    director:'No one',
-    length:3
-}
-showProperties(movie)
-function showProperties() {
-    for(let obj in movie){
-        if(typeof movie[obj] == 'string'){
-            console.log(obj, movie[obj])
-        }
+// let movie ={
+//     title:'Another Movie',
+//     releaseDate:'never',
+//     rating:'unknown',
+//     director:'No one',
+//     length:3
+// }
+// showProperties(movie)
+// function showProperties() {
+//     for(let obj in movie){
+//         if(typeof movie[obj] == 'string'){
+//             console.log(obj, movie[obj])
+//         }
+//     }
+// }
+// console.log(sum(10))
+// function sum(limit){
+//     let total = 0;
+    
+//     for(let i=1; i<=limit; i++){
+//         if(i%3==0)
+//             total+=i
+//         if(i%5==0)
+//             total+=i
+//     }
+
+//     console.log(total)
+//     }
+let marks=[80,80,60,100]
+    let total=0;
+    let dividor=0;
+    calcGrades(marks)
+function calcGrades(){
+ for(let score of marks){
+        total+= score;
+        dividor++;
     }
+}
+grade()
+function grade(){
+    let classGrade;
+    average= total/dividor;
+    if (average<=59) classGrade="F";
+    if (average>59) classGrade="D";
+    if (average>69) classGrade="C";
+    if (average>79) classGrade="B";
+    if (average>89) classGrade="A";
+    console.log(average)
+   console.log(classGrade)
 }
