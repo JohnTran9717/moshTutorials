@@ -116,25 +116,48 @@
 
 //     console.log(total)
 //     }
-let marks=[80,80,60,100]
-    let total=0;
-    let dividor=0;
-    calcGrades(marks)
-function calcGrades(){
- for(let score of marks){
-        total+= score;
-        dividor++;
-    }
-}
-grade()
-function grade(){
-    let classGrade;
-    average= total/dividor;
-    if (average<=59) classGrade="F";
-    if (average>59) classGrade="D";
-    if (average>69) classGrade="C";
-    if (average>79) classGrade="B";
-    if (average>89) classGrade="A";
-    console.log(average)
-   console.log(classGrade)
-}
+// let marks=[80,80,60,100]
+//     let total=0;
+//     let dividor=0;
+//     calcGrades(marks)
+// function calcGrades(){
+//  for(let score of marks){
+//         total+= score;
+//         dividor++;
+//     }
+// }
+// grade()
+// function grade(){
+//     let classGrade;
+//     average= total/dividor;
+//     if (average<=59) classGrade="F";
+//     if (average>59) classGrade="D";
+//     if (average>69) classGrade="C";
+//     if (average>79) classGrade="B";
+//     if (average>89) classGrade="A";
+//     let total=0;
+//     let dividor=0;
+//     console.log(average)
+//    console.log(classGrade)
+// }
+// showStars(10)
+// function showStars(rows) {
+//     for(let row=1; row<=rows; row++){
+//         let pattern="";
+//         for (let i=0; i<rows; i++) {
+//         pattern+="*"; 
+//         console.log(pattern);
+//         }
+//         break
+//     }
+// }
+// showPrimes(50)
+// function showPrimes (limit) {
+//     for(let currentNumber=2; currentNumber <= limit; currentNumber++) isPrime(currentNumber)
+// }
+// function isPrime(number){   
+//         for(let factor=2; factor < number; factor++)
+//             if(number%factor===0)
+//                 return false
+//         console.log(number)
+// }
